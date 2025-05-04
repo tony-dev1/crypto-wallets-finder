@@ -3,7 +3,7 @@
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/gonalva.webp" />
+    <img width="1000" height="460" src="/assets/walletgen1.png" />
 </p>
 
 <p align="center">
@@ -24,8 +24,10 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 5. <b>Search EVM wallets with balance (using the Internet - slower).</b>
 6. <b>Search EVM wallets with balance (using the database - faster).</b>
 
+# Demo
+
 <p align="center">
-    <img width="1000" height="460" src="/assets/fettnannhalf.gif" />
+    <img width="1000" height="460" src="/assets/walletgen.gif" />
 </p>
 
 <p align="center">
