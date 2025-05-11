@@ -104,6 +104,10 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 
 Contributions are welcome! If you have ideas, bug reports, or want to contribute to the codebase, feel free to submit a pull request.
 
+## Contacts
+If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
+My Discord: **tonydevbtc.**
+
 ## Donate
 
 I encourage you, when you find a wallet with a balance, to send me a small portion as a thank you. This motivates me to keep working on the program, keep it going, and make it better!
