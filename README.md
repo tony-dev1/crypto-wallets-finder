@@ -1,6 +1,6 @@
 # Seed Phrase Generator - WalletGen
 
-[![downloads](https://img.shields.io/github/downloads/tony-dev1/wallets-finder/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen) [![license](https://img.shields.io/github/license/tony-dev1/wallets-finder)](/LICENSE)
+[![downloads](https://img.shields.io/github/downloads/tony-dev1/wallets-finder/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen) [![license](https://img.shields.io/github/license/tony-dev1/wallets-finder)](/LICENSE) ![discord](https://img.shields.io/badge/discord-tonydev-yellow)
 
 **Wallet Gen** is a tool designed for brute force and generating cryptocurrency wallets (such as **Bitcoin** and **EVM-based** wallets like **ETH, BNB, MATIC, etc.**), as well as discovering forgotten or lost wallets that contain an existing balance.
 
