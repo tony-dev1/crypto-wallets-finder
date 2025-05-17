@@ -7,7 +7,7 @@ Built in C++ for maximum speed, it allows you to generate wallets, brute-force s
 [![downloads](https://img.shields.io/github/downloads/tony-dev1/walletgen/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
 ![build](https://img.shields.io/badge/build-passing-brightgreen)
 [![license](https://img.shields.io/github/license/tony-dev1/walletgen)](/LICENSE) 
-![discord](https://img.shields.io/badge/discord-tonydev-yellow)
+![discord](https://img.shields.io/badge/discord-tonydev-blue.svg?logo=discord&label=discord)
 
 <p align="center">
     <img width="1000" height="460" src="/assets/walletgen1.png" />
