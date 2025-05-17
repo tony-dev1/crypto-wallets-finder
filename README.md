@@ -13,16 +13,22 @@ Built in C++ for maximum speed, it allows you to generate wallets, brute-force s
     <img width="1000" height="460" src="/assets/walletgen1.png" />
 </p>
 
-## Overview
+⚠️ **Disclaimer**: WalletGen is a research and educational tool. It is not intended for unauthorized access or malicious activity. Use it responsibly and only with wallets you own or have permission to access.
 
-**Wallet Gen** is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, **Wallet Gen** boasts significantly higher wallet generation speeds, with performance primarily relying on your graphics card. 
-For generating EVM wallets (ETH, BNB, MATIC, etc.), Wallet Gen uses the keccak256 algorithm, while Bitcoin wallets are created using the Segwit format under Bech32.
+## How It Works
+
+WalletGen generates random or deterministic seed phrases and converts them into wallet addresses using BIP39, BIP44, and Bech32 (for BTC) or keccak256 (for EVM).
+
+The software compares generated addresses against known address databases or checks balances in real-time via public blockchain explorers. 
+
+Wallet Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your CPU & GPU.
+
 
 ## Features
 
 - **Generation of cryptocurrency wallets**: Wallet Gen supports creating single wallets for Bitcoin, Ethereum, BNB, MATIC and other cryptocurrencies.
 - **Search for wallets with balance**: Using bruteforce techniques, Wallet Gen allows you to search for existing wallets with balances in both the Bitcoin network and EVMs.
-- **Support for various algorithms**: Keccak256 algorithm for EVM wallets and Segwit algorithm for Bitcoin are used for wallet generation.
+- **Support for various algorithms**: Keccak256 algorithm for EVM wallets and BIP39, BIP44, Bech32 algorithm for Bitcoin are used for wallet generation.
 - **Using a database to speed up searches**: Download and use databases to search for balance wallets, speeding up the process tenfold.
 - **High speed of operation**: Wallet Gen utilizes the power of the CPU and GPU to achieve the best performance.
 
