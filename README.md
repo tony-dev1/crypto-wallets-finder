@@ -11,7 +11,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 - [How It Works](#how-it-works)
 - [Why WalletGen](#why-walletgen)
 - [Features](#features)
-- [How to Start](#how-to-start)
+- [Download WalletGen(#how-to-start)
 - [Database Download](#download-and-use-database-for-more-speed)
 - [My Finds](#my-finds)
 - [FAQ](#-frequently-asked-questions-faq)
@@ -93,14 +93,14 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
 By using the database, you can significantly improve the efficiency of your search, as it eliminates the need to query the blockchain for every wallet generated
 
 
-## How to start
+# How to start
 
-### Windows 
+## Windows 
 - Download [WalletGen.zip](https://github.com/tony-dev1/wallets-finder/releases/download/walletgen/WalletGen_v1.7.0.zip) (5MB)
 - Unpack anywhere
 - Run `WalletGen.exe`
 
-### Linux (x86-64bit)
+## Linux (x86-64bit)
 ```bash
 wget https://github.com/tony-dev1/walletgen/releases/download/walletgen/walletgen-v1.5.0-linux.tar.gz
 tar -xzf walletgen-v1.5.0-linux.tar.gz
