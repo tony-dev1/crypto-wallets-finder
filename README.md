@@ -1,7 +1,22 @@
-# WalletGen – Fast Crypto Wallet Generator & Balance Finder (BTC / ETH / BNB / EVM)
+# WalletGen – Crypto Wallet Generator & Balance Finder for Lost Bitcoin (BTC), Ethereum (ETH), BNB, Polygon (MATIC) and EVM Chains
 
-**WalletGen** is a high-performance cryptocurrency wallet generator and balance finder for **Bitcoin (BTC)** and **EVM-based blockchains** like **Ethereum (ETH)**, **BNB**, **Polygon (MATIC)** and more.  
-Built in C++ for maximum speed, it allows you to generate wallets, brute-force seed phrases, and search for lost crypto wallets with active balances.
+**WalletGen** is an open-source, ultra-fast **crypto wallet generator** and **seed phrase brute force tool**. It helps you find lost or inactive **Bitcoin (BTC)**, **Ethereum (ETH)**, **BNB**, **Polygon (MATIC)**, and other **EVM-compatible wallets** with real-time balance checking and high-performance C++ engine.
+
+<!--
+Meta description:
+WalletGen is a high-speed, open-source crypto wallet generator and balance finder for Bitcoin, Ethereum, and other EVM-compatible blockchains. It allows brute-force seed phrase testing, wallet generation, and recovery of lost crypto wallets using databases or real-time balance checks.
+-->
+
+## 📚 Quick Navigation
+- [How It Works](#how-it-works)
+- [Why WalletGen](#why-walletgen)
+- [Features](#features)
+- [How to Start](#how-to-start)
+- [Database Download](#download-and-use-database-for-more-speed)
+- [My Finds](#my-finds)
+- [FAQ](#-frequently-asked-questions-faq)
+- [Build Instructions](#building-the-project)
+- [Donate](#donate)
 
 [![platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-blue)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
 [![downloads](https://img.shields.io/github/downloads/tony-dev1/walletgen/total)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
@@ -10,19 +25,22 @@ Built in C++ for maximum speed, it allows you to generate wallets, brute-force s
 ![discord](https://img.shields.io/badge/discord-tonydevbtc-blue.svg?logo=discord&label=discord)
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/walletgen1.png" />
+    <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen1.png" />
 </p>
 
 ⚠️ **Disclaimer**: WalletGen is a research and educational tool. It is not intended for unauthorized access or malicious activity. Use it responsibly and only with wallets you own or have permission to access.
 
 ## How It Works
 
-WalletGen generates random or deterministic seed phrases and converts them into wallet addresses using BIP39, BIP44, and Bech32 (for BTC) or keccak256 (for EVM).
+WalletGen generates wallets using [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki), [BIP44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki), and [Bech32](https://en.bitcoin.it/wiki/Bech32) for Bitcoin, and [Keccak256](https://emn178.github.io/online-tools/keccak_256.html) hashing for EVM-based chains like Ethereum.
 
 The software compares generated addresses against known address databases or checks balances in real-time via public blockchain explorers. 
 
 Wallet Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your CPU & GPU.
 
+## Why WalletGen?
+
+Unlike Python-based brute force tools, **WalletGen** is written in C++ and optimized for multi-threaded CPU and GPU usage, delivering up to **10x faster** performance. Whether you’re exploring lost wallets, verifying private key space, or recovering your own wallet, WalletGen gives you the power to do it efficiently and securely.
 
 ## Features
 
@@ -32,17 +50,28 @@ Wallet Gen is built in C++ and is open-source, allowing anyone to access and mod
 - **Using a database to speed up searches**: Download and use databases to search for balance wallets, speeding up the process tenfold.
 - **High speed of operation**: Wallet Gen utilizes the power of the CPU and GPU to achieve the best performance.
 
+## Supported Blockchains
+
+- Bitcoin (BTC)
+- Ethereum (ETH)
+- Binance Smart Chain (BNB)
+- Polygon (MATIC)
+- Avalanche (AVAX)
+- Fantom (FTM)
+- Arbitrum / Optimism
+- Any EVM-compatible chain
+
 # Demo
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/wallet-gen.gif" />
+    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Windows Demo" title="WalletGen search lost bitcoin wallets on Windows" src="/assets/wallet-gen.gif" />
 </p>
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/walletgen_linux1.png" />
+    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Linux Demo" title="WalletGen search lost bitcoin wallets on Linux" src="/assets/walletgen_linux1.png" />
 </p>
 
-# Searching for Crypto Wallets
+# How to Search for Lost Bitcoin & Ethereum Wallets with Balance
 
 **Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
 
@@ -74,7 +103,7 @@ I’ve personally recovered two BTC wallets with a balance. The first had 0.0000
 Here’s the link to the wallet: [bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay](https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay).
 
 <p align="center">
-    <img width="1000" height="460" src="/assets/tocozu.webp" />
+    <img width="1000" height="460" alt="WalletGen found first lost bitcoin wallet" title="WalletGen found first lost bitcoin wallet" src="/assets/tocozu.webp" />
 </p>
 
 ### New Find 4/9/2025
@@ -108,6 +137,26 @@ After a week of non-stop wallet searching, I finally found a [wallet](https://me
 
 3. Start building the project.
 
+## 🔍 Frequently Asked Questions (FAQ)
+
+### ❓ Can WalletGen help me recover a lost Bitcoin wallet?
+Yes. WalletGen uses brute-force seed generation and a known-address database to help users potentially **recover lost Bitcoin wallets**.
+
+### ❓ Is WalletGen a seed phrase generator?
+Yes. WalletGen can generate **BIP39 seed phrases** and derive wallets for Bitcoin, Ethereum, and other EVM chains.
+
+### ❓ Can I find Ethereum wallets with balance?
+Yes. WalletGen supports scanning for **Ethereum wallets with balance** using brute-force and a database of known addresses.
+
+### ❓ Is WalletGen legal?
+WalletGen is intended for **educational and research purposes only**. It should only be used on wallets you own or have permission to access.
+
+### ❓ Where can I download a database of known addresses with balance?
+You can download the current database given on the [page in the release](https://github.com/tony-dev1/crypto-wallets-finder/releases/tag/database).
+
+### ❓ Do I need the internet to search through the database?
+No. Searching through the database does not require an internet connection, as the wallet balance is already known.
+
 ## Todo
 1. Search for missing words in a seed phrase.
 
@@ -134,5 +183,6 @@ This project uses code from the [Trezor project](https://github.com/trezor/trezo
 This project is licensed under the [MIT License](/LICENSE)
 
 <!--
-bitcoin, ethereum, crypto, cryptocurrency, crypto seed phrase mining, crypto bruteforce, bitcoin bruteforce, ethereum bruteforce, crypto finder, lost bitcoin, brute force wallet, crypto brute foce, crypto bruteforce, crypto bruteforce wallet, crypto bruteforce key, crypto wallet, crypto wallet recovery, crypto wallet seed generator, crypto wallet seed phrase, crypto wallet tools, wallet finder crypto, wallet recovery seeds, wallet recovery tools, seed phrase, seed phrase generator, bip39 wallet, trezor, walletgen, crypto mining, mnemonic generator, crypto recovery, recovery crypto, bitcoin wallet, ethereum wallet, seed phrase finder, seed phrase wallet, seed phrase generator with balance, seed phrase balance checker, seed phrase trust wallet, seed phrase generator and checker, seed phrase storage, seed phrase word list github, bitcoin explorer, bitcoin core, bitcoin mining, ethereum mining, lost bitcoin wallet list, lost bitcoin wallet finder, lost bitcoin wallets, lost bitcoin password, lost bitcoin addresses, crypto mining app, crypto mining software, mnemonic phrase, mnemonic, mnemonic phrase generator, mnemonic phrase checker, mnemonic phrase lost, mnemonic phrase to private key, mnemonic phrase wallet, private key finder, private key bitcoin, private keys database, private key metamask, private key to seed phrase, private key, private key ethereum, private key wallet, crypto address check, brute crypto mining, brute crypto
+## Keywords
+'bitcoin', 'ethereum', 'crypto', 'cryptocurrency', 'crypto seed phrase mining', 'crypto bruteforce', 'bitcoin bruteforce', 'ethereum bruteforce', 'crypto finder', 'lost bitcoin', 'brute force wallet', 'crypto brute foce', 'crypto bruteforce', 'crypto bruteforce wallet', 'crypto bruteforce key', 'crypto wallet', 'crypto wallet recovery', 'crypto wallet seed generator', 'crypto wallet seed phrase', 'crypto wallet tools', 'wallet finder crypto', 'wallet recovery seeds', 'wallet recovery tools', 'seed phrase', 'seed phrase generator', 'bip39 wallet', 'trezor', 'walletgen', 'crypto mining', 'mnemonic generator', 'crypto recovery', 'recovery crypto', 'bitcoin wallet', 'ethereum wallet', 'seed phrase finder', 'seed phrase wallet', 'seed phrase generator with balance', 'seed phrase balance checker', 'seed phrase trust wallet', 'seed phrase generator and checker', 'seed phrase storage', 'seed phrase word list github', 'bitcoin explorer', 'bitcoin core', 'bitcoin mining', 'ethereum mining', 'lost bitcoin wallet list', 'lost bitcoin wallet finder', 'lost bitcoin wallets', 'lost bitcoin password', 'lost bitcoin addresses', 'lost btc', 'lost bitcoins', 'lost ethereum', 'lost eth', 'crypto mining app', 'crypto mining software', 'mnemonic phrase', 'mnemonic', 'mnemonic phrase generator', 'mnemonic phrase checker', 'mnemonic phrase lost', 'mnemonic phrase to private key', 'mnemonic phrase wallet', 'private key finder', 'private key bitcoin', 'private keys' 'database', 'private key metamask', 'private key to seed phrase', 'private key', 'private key ethereum', 'private key wallet', 'crypto address check', 'brute crypto mining', 'brute crypto'.
 -->
