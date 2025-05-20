@@ -71,11 +71,26 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
     <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Linux Demo" title="WalletGen search lost bitcoin wallets on Linux" src="/assets/walletgen_linux1.png" />
 </p>
 
-# How to Search for Lost Bitcoin & Ethereum Wallets with Balance
+## How to Search for Lost Bitcoin & Ethereum Wallets with Balance
 
-**Wallet Gen** allows you to search using brute force method for two types of crypto wallets with an existing balance. To search for BTC wallets, press key `3` in the menu or run `start_search_btc.bat`. For searching EVM wallets (such as Ethereum, BNB, etc.), press key `4` in the menu or run `start_search_evm.bat`. 
+**Wallet Gen** allows you to search using brute-force method for two types of crypto wallets with an existing balance.
 
-The search speed is determined by your hardware, especially your graphics card. To increase your chances of finding a wallet with a balance, you can run multiple instances of the program, from 1 to 4, depending on the power of your graphics card.
+### For Bitcoin (BTC) wallets:
+
+* Press key 3 in the menu or run start_search_btc.bat to search Bitcoin wallets through the internet. This method may take longer, as it checks wallet balances in real-time via blockchain explorers.
+* Press key 6 to search Bitcoin wallets using the database. This method is faster because it compares generated wallets against a pre-built database of known addresses with balances.
+
+### For EVM wallets (Ethereum, BNB, MATIC, etc.):
+
+* Press key 5 or run start_search_evm.bat to search EVM wallets through the internet. This method checks for wallets with balance in real-time through blockchain explorers.
+* Press key 6 to search EVM wallets using the database. This method is faster since it compares generated wallets against the known database of addresses with balance.
+
+### Speed Considerations:
+
+* The speed of the search depends heavily on your hardware, especially the graphics card (GPU). To speed up the process and increase your chances of finding a wallet with a balance, you can run multiple instances of the program (1 to 4), depending on your system's performance
+
+By using the database, you can significantly improve the efficiency of your search, as it eliminates the need to query the blockchain for every wallet generated
+
 
 ## How to start
 
