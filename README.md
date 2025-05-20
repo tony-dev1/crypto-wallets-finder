@@ -25,7 +25,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 ![discord](https://img.shields.io/badge/discord-tonydevbtc-blue.svg?logo=discord&label=discord)
 
 <p align="center">
-    <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen1.png" />
+    <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen1.webp" />
 </p>
 
 ⚠️ **Disclaimer**: WalletGen is a research and educational tool. It is not intended for unauthorized access or malicious activity. Use it responsibly and only with wallets you own or have permission to access.
@@ -64,11 +64,12 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
 # Demo
 
 <p align="center">
-    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Windows Demo" title="WalletGen search lost bitcoin wallets on Windows" src="/assets/wallet-gen.gif" />
+    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Windows Demo" title="WalletGen search lost bitcoin wallets on Windows" src="/assets/walletgen-demo.gif" />
 </p>
 
+
 <p align="center">
-    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Linux Demo" title="WalletGen search lost bitcoin wallets on Linux" src="/assets/walletgen_linux1.png" />
+    <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Linux Demo" title="WalletGen search lost bitcoin wallets on Linux" src="/assets/walletgen_linux1.webp" />
 </p>
 
 ## How to Search for Lost Bitcoin & Ethereum Wallets with Balance
