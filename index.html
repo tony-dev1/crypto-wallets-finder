@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WalletGen – Crypto Wallet Generator & Finder</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="WalletGen is a high-speed, open-source crypto wallet generator and balance finder for Bitcoin, Ethereum, and EVM chains. Supports brute-force seed phrase testing, wallet recovery, and real-time balance checks.">
+    <meta name="keywords" content="bitcoin, ethereum, crypto wallet generator, wallet recovery, seed phrase brute force, lost wallet finder, crypto wallet balance checker">
+    <meta name="author" content="TonyDev">
+
+    <!-- Open Graph (for Facebook, Discord, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WalletGen – Crypto Wallet Generator & Finder">
+    <meta property="og:description" content="Generate, recover, and scan Bitcoin, Ethereum, and EVM wallets. Open-source, fast, C++ powered tool.">
+    <meta property="og:image" content="hhttps://tony-dev1.github.io/crypto-wallets-finder/assets/walletgen1.webp">
+    <meta property="og:url" content="https://tony-dev1.github.io/crypto-wallets-finder"> 
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WalletGen – Crypto Wallet Generator & Finder">
+    <meta name="twitter:description" content="Open-source C++ crypto wallet generator and brute-force recovery tool for Bitcoin, Ethereum and EVM wallets.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/walletgen1.webp"> <!-- ЗАМЕНИ -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "WalletGen",
+      "description": "Open-source crypto wallet generator and balance finder for BTC, ETH, BNB, and EVM chains.",
+      "applicationCategory": "Utility",
+      "operatingSystem": "Windows, Linux",
+      "author": {
+        "@type": "Person",
+        "name": "TonyDev"
+      },
+      "url": "https://yourdomain.com",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>WalletGen – Crypto Wallet Generator & Balance Finder</h1>
+        <p><strong>WalletGen</strong> is a fast, open-source wallet generator and <strong>brute-force recovery tool</strong> for lost Bitcoin, Ethereum, and EVM-compatible wallets. Built in C++ for maximum performance.</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#why-walletgen">Why WalletGen</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#start">How to Start</a></li>
+            <li><a href="#database">Download Databases</a></li>
+            <li><a href="#finds">My Wallet Finds</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#donate">Donate</a></li>
+        </ul>
+    </nav>
+    <img src="assets/walletgen1.webp" alt="WalletGen Windows Demo" width="1000" height="460" loading="lazy">
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>WalletGen generates wallets using industry standards like <strong>BIP39, BIP44, Bech32</strong> for Bitcoin, and <strong>Keccak256</strong> hashing for Ethereum and other EVM chains. It then compares generated addresses against:</p>
+        <ul>
+            <li>Pre-built databases of known addresses with balances</li>
+            <li>Or queries public blockchain explorers in real-time</li>
+        </ul>
+        <p>Thanks to C++ and multi-threading, it's <strong>10x faster</strong> than most Python alternatives.</p>
+    </section>
+
+    <section id="why-walletgen">
+        <h2>Why WalletGen?</h2>
+        <ul>
+            <li>High-speed wallet generation and checking</li>
+            <li>Cross-platform: Windows and Linux</li>
+            <li>Database-based and real-time scanning options</li>
+            <li>Open-source and fully transparent</li>
+        </ul>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Wallet generation</strong> for BTC, ETH, BNB, MATIC, and other coins</li>
+            <li><strong>Brute-force seed phrase recovery</strong> (12/24-word BIP39 mnemonics)</li>
+            <li><strong>Database-based scanning</strong> for higher speed</li>
+            <li><strong>GPU/CPU-optimized C++ core</strong></li>
+            <li><strong>Offline operation</strong> when using databases</li>
+        </ul>
+    </section>
+
+    <section id="supported">
+        <h2>Supported Blockchains</h2>
+        <p>WalletGen supports the following chains:</p>
+        <ul>
+            <li>Bitcoin (BTC)</li>
+            <li>Ethereum (ETH)</li>
+            <li>Binance Smart Chain (BNB)</li>
+            <li>Polygon (MATIC)</li>
+            <li>Avalanche (AVAX)</li>
+            <li>Fantom (FTM)</li>
+            <li>Arbitrum / Optimism</li>
+            <li>Any EVM-compatible blockchain</li>
+        </ul>
+    </section>
+
+    <section id="demo">
+        <h2>Demo</h2>
+        <p>Watch WalletGen in action:</p>
+    
+        <img src="assets/walletgen-demo.gif" alt="WalletGen demo GIF" width="1000" height="460" loading="lazy">
+        <img src="assets/walletgen_linux1.webp" alt="WalletGen Linux Demo" width="1000" height="460" loading="lazy">
+    </section>
+
+    <section id="start">
+        <h2>How to Start</h2>
+        <h3>Windows</h3>
+        <ol>
+            <li><a href="https://github.com/tony-dev1/wallets-finder/releases/download/walletgen/WalletGen_v1.7.0.zip">Download ZIP</a></li>
+            <li>Extract to any folder</li>
+            <li>Run <code>WalletGen.exe</code></li>
+        </ol>
+
+        <h3>Linux</h3>
+        <pre><code>wget https://github.com/tony-dev1/walletgen/releases/download/walletgen/walletgen-v1.5.0-linux.tar.gz
+tar -xzf walletgen-v1.5.0-linux.tar.gz
+cd walletgen
+./walletgen</code></pre>
+    </section>
+
+    <section id="database">
+        <h2>Download and Use Database</h2>
+        <p>Boost your scanning speed by using pre-built address databases:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Download</th>
+                    <th>Size</th>
+                    <th>Addresses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>BTC Database</td>
+                    <td><a href="https://github.com/tony-dev1/walletgen/releases/download/database/btc_database.txt">Download</a></td>
+                    <td>1.03 GB</td>
+                    <td>23,428,179</td>
+                </tr>
+                <tr>
+                    <td>EVM Database</td>
+                    <td><a href="https://github.com/tony-dev1/walletgen/releases/download/database/evm_database.txt">Download</a></td>
+                    <td>1.02 GB</td>
+                    <td>25,999,700</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   <section id="my-finds">
+    <h2>My Finds</h2>
+    <p>I’ve personally recovered two BTC wallets with a balance. The first had 0.000032 BTC, the second contained 0.0528 BTC (roughly $4800 at the time of discovery).</p>
+    <a href="https://mempool.space/address/bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay" target="_blank">
+        bc1qk3m62hx2hh5mhvc0tj45f9xflzcnu0sur3rvay
+    </a>
+    <img src="assets/tocozu.webp" alt="WalletGen first recovered wallet screenshot" width="1000" height="460" loading="lazy">
+
+    <h3>New Find 4/9/2025</h3>
+    <p>After a week of searching, I found a wallet with 0.25 BTC (~$19k):</p>
+    <a href="https://mempool.space/address/bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0" target="_blank">
+        bc1q29c5m3w4jxtsj4vcd2ccw4t68xm8m7vs5vytu0
+    </a>
+    <img src="https://github.com/user-attachments/assets/57f95d59-9da2-44f0-8f66-dbbe7fe69aee" alt="WalletGen 0.25 BTC find" width="1000" height="460" loading="lazy">
+
+    <h3>New Find 5/5/2025</h3>
+    <a href="https://mempool.space/address/bc1qpm0k3kcmthwsa4zseh33g3hl7eju8u8nkt83kp" target="_blank">
+        bc1qpm0k3kcmthwsa4zseh33g3hl7eju8u8nkt83kp
+    </a>
+    <img src="https://github.com/user-attachments/assets/6c5faff7-594f-4d37-b91b-f6482c728611" alt="WalletGen 5/5/2025 BTC find" width="1000" height="460" loading="lazy">
+</section>
+
+
+    <section id="faq">
+        <h2>FAQ</h2>
+        <dl>
+            <dt>❓ Is WalletGen a seed phrase generator?</dt>
+            <dd>Yes. It generates BIP39-compliant mnemonics and derives addresses using BIP44.</dd>
+
+            <dt>❓ Can I search for ETH wallets with balance?</dt>
+            <dd>Yes. It supports Ethereum and all EVM chains.</dd>
+
+            <dt>❓ Can I use it offline?</dt>
+            <dd>Yes, when searching using pre-built databases.</dd>
+
+            <dt>❓ Is this legal?</dt>
+            <dd>Only for educational and recovery purposes on wallets you own.</dd>
+
+            <dt>❓ How fast is it?</dt>
+            <dd>It can be up to 10x faster than Python tools thanks to C++ multithreading.</dd>
+        </dl>
+    </section>
+
+    <section id="donate">
+        <h2>Donate</h2>
+        <p>If WalletGen helped you recover a wallet, consider sending a small donation to support development:</p>
+        <ul>
+            <li><strong>BTC:</strong> bc1qeyrshy5ntsguwxe9m8tp2x2yqhddz7ymkj44h9</li>
+            <li><strong>ETH:</strong> 0x76c2E75B92Eb340f01B378e332FC7d8954893693</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 WalletGen – Built by TonyDev | <a href="https://github.com/tony-dev1/wallets-finder">GitHub Repo</a></p>
+    </footer>
+
+</body>
+</html>
+

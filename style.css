@@ -1,0 +1,180 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 30px 0;
+}
+
+nav li {
+    margin: 8px 12px;
+}
+
+nav a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #00aaff;
+}
+
+section h3 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #ff8c00;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+/* Code & Pre */
+code, pre {
+    background-color: #1b1b1b;
+    color: #ffaa55;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: monospace;
+    display: block;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #1a1a1a;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #222;
+    color: #00aaff;
+}
+
+/* FAQ */
+dl dt {
+    font-weight: bold;
+    color: #ffaa00;
+    margin-top: 10px;
+}
+
+dl dd {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #999;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Images & Videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 0 8px rgba(255, 140, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
+
