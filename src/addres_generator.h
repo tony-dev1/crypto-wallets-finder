@@ -1,27 +1,33 @@
+/* 
+* This file is part of the Trezor Crypto library.
+* 
+* Copyright (c) 2021 SatoshiLabs s.r.o. (https://www.satoshilabs.com)
+* 
+* This code is licensed under the MIT License (MIT), see LICENSE file for details.
+*/
+
+
 #pragma once
 
-#include "utils.h"
+#include <stdio.h>
+#include <string>
+#include <vector>
 
-struct wallet {
-	std::string address;
-	std::string public_key;
-	std::string private_key;
-	std::string mnemonic;
-};
+extern "C" {
+#include "trezor/bip39.h"
+#include "trezor/bip32.h"
+#include "trezor/sha2.h"
+#include "trezor/ripemd160.h"
+#include "trezor/segwit_addr.h"
+#include "trezor/sha2.h"
+#include "trezor/curves.h"
+#include "trezor/base58.h"
+#include "trezor/sha3.h"
+#include "trezor/secp256k1.h"
 
+}
 
-struct BIP32Node {
-    std::vector<unsigned char> privkey;
-    std::vector<unsigned char> chain_code;
-    uint32_t index = 0;
-    uint32_t fingerprint = 0;
-    std::vector<unsigned char> pubkey;
-    std::vector<unsigned char> pubkey_hash;
-};
+#include "address_checker.h"
 
-BIP32Node derive_master_key(const std::vector<uint8_t>& seed);
-BIP32Node derive_key(const BIP32Node& parent_node, const std::string& path);
-std::vector<unsigned char> private_to_public_key(const std::vector<unsigned char>& privkey);
-
-wallet generate_evm_wallet(const std::string& mnemonic);
-wallet generate_bitcoin_wallet(const std::string& mnemonic);
+wallet generate_evm_wallet(std::string mnemonic);
+wallet generate_bitcoin_wallet(const std::string mnemonic);
