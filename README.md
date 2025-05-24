@@ -168,14 +168,14 @@ Yes. WalletGen uses brute-force seed generation and a known-address database to 
 ### ❓ Is WalletGen a seed phrase generator?
 Yes. WalletGen can generate **BIP39 seed phrases** and derive wallets for Bitcoin, Ethereum, and other EVM chains.
 
+### ❓ Do I need the internet to search through the database?
+No. Searching through the database does not require an internet connection, as the wallet balance is already known.
+
 ### ❓ Can I find Ethereum wallets with balance?
 Yes. WalletGen supports scanning for **Ethereum wallets with balance** using brute-force and a database of known addresses.
 
 ### ❓ Is WalletGen legal?
 WalletGen is intended for **educational and research purposes only**. It should only be used on wallets you own or have permission to access.
-
-### ❓ Do I need the internet to search through the database?
-No. Searching through the database does not require an internet connection, as the wallet balance is already known.
 
 ## Todo
 1. Search for missing words in a seed phrase.
