@@ -13,6 +13,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 - [Features](#features)
 - [Download WalletGen](#how-to-start)
 - [Database Download](#download-and-use-database-for-more-speed)
+- [The Program Found a Wallet - What Next?](#the-program-found-a-wallet--whats-next)
 - [My Finds](#my-finds)
 - [FAQ](#-frequently-asked-questions-faq)
 - [Build Instructions](#building-the-project)
