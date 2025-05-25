@@ -7,7 +7,7 @@ Meta description:
 WalletGen is a high-speed, open-source crypto wallet generator and balance finder for Bitcoin, Ethereum, and other EVM-compatible blockchains. It allows brute-force seed phrase testing, wallet generation, and recovery of lost crypto wallets using databases or real-time balance checks.
 -->
 
-## 📚 Quick Navigation
+## Quick Navigation
 - [How It Works](#how-it-works)
 - [Why WalletGen](#why-walletgen)
 - [Features](#features)
@@ -37,7 +37,7 @@ The software compares generated addresses against known address databases or che
 
 Wallet Gen is built in C++ and is open-source, allowing anyone to access and modify the code. Compared to Python-based wallet generators, Wallet Gen boasts significantly higher wallet generation speeds, with performance primarily relying on your CPU & GPU.
 
-## Why WalletGen?
+##  Why WalletGen?
 
 Unlike Python-based brute force tools, **WalletGen** is written in C++ and optimized for multi-threaded CPU and GPU usage, delivering up to **10x faster** performance. Whether you’re exploring lost wallets, verifying private key space, or recovering your own wallet, WalletGen gives you the power to do it efficiently and securely.
 
@@ -54,10 +54,6 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
 - Bitcoin (BTC)
 - Ethereum (ETH)
 - Binance Smart Chain (BNB)
-- Polygon (MATIC)
-- Avalanche (AVAX)
-- Fantom (FTM)
-- Arbitrum / Optimism
 - Any EVM-compatible chain
 
 # Demo
@@ -116,6 +112,19 @@ cd walletgen
 |---------------------------------------------------------|------------------------------------------------|------------------------------------|----------------------------------|
 | BTC Database                                            | &nbsp;&nbsp;&nbsp;&nbsp;[btc_database.txt](https://github.com/tony-dev1/walletgen/releases/download/database/btc_database.txt)  | 1.03 GB | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23 428 179
 | EVM Database                                            | &nbsp;&nbsp;&nbsp;&nbsp;[evm_database.txt](https://github.com/tony-dev1/walletgen/releases/download/database/evm_database.txt)  | 1.02 GB | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 999 700
+
+
+## The Program Found a Wallet — What’s Next?
+When the program finds a wallet with a balance, it will:
+* **Stop** immediately
+* **Display** the wallet details in the console
+* **Save** this data in the ``found_wallets.txt`` file
+
+### How to Access the Funds?
+1. Import the **mnemonic seed phrase** from the found wallet into any compatible crypto wallet (such as Metamask, Trust Wallet, or Electrum).
+2. Once restored, you’ll be able to transfer the funds to your own wallet.
+   
+>  If the find is successful, be sure to share a small portion of the balance you find with me! Thank you!
 
 ## My Finds
 
