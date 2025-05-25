@@ -21,6 +21,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 [![platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20Android-blue)](https://github.com/tony-dev1/wallets-finder/releases/tag/walletgen)
 ![build](https://img.shields.io/badge/build-passing-brightgreen)
 ![discord](https://img.shields.io/badge/discord-tonydevbtc-blue.svg?logo=discord&label=discord)
+![x](https://img.shields.io/badge/@tonydevbtc-black.svg?logo=x)
 
 <p align="center">
     <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen1.webp" />
@@ -189,6 +190,7 @@ Contributions are welcome! If you have ideas, bug reports, or want to contribute
 ## Contacts
 If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
 My Discord: **tonydevbtc**
+My X/Twitter: @tonydevbtc
 
 ## Donate
 
