@@ -190,7 +190,7 @@ Contributions are welcome! If you have ideas, bug reports, or want to contribute
 ## Contacts
 If you have any questions or want to share your find or you found some bug in WalletGen work, feel free to message me!
 My Discord: **tonydevbtc**
-My X/Twitter: @tonydevbtc
+My X/Twitter: **@tonydevbtc**
 
 ## Donate
 
