@@ -14,6 +14,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 - [Download WalletGen](#how-to-start)
 - [Database Download](#download-and-use-database-for-more-speed)
 - [The Program Found a Wallet - What Next?](#the-program-found-a-wallet--whats-next)
+- [Recovery Your Bitcoin Wallet](#recovery-your-bitcoin-wallet)
 - [My Finds](#my-finds)
 - [FAQ](#-frequently-asked-questions-faq)
 - [Build Instructions](#building-the-project)
@@ -25,7 +26,7 @@ WalletGen is a high-speed, open-source crypto wallet generator and balance finde
 [![x](https://img.shields.io/badge/@tonydevbtc-black.svg?logo=x)](https://x.com/tonydevbtc)
 
 <p align="center">
-    <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen1.webp" />
+    <img width="1000" alt="WalletGen wallet generator demo" title="WalletGen wallet generator" height="460" src="/assets/walletgen.webp" />
 </p>
 
 ⚠️ **Disclaimer**: WalletGen is a research and educational tool. It is not intended for unauthorized access or malicious activity. Use it responsibly and only with wallets you own or have permission to access.
@@ -49,6 +50,7 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
 - **Support for various algorithms**: Keccak256 algorithm for EVM wallets and BIP39, BIP44, Bech32 algorithm for Bitcoin are used for wallet generation.
 - **Using a database to speed up searches**: Download and use databases to search for balance wallets, speeding up the process tenfold.
 - **High speed of operation**: Wallet Gen utilizes the power of the CPU and GPU to achieve the best performance.
+- **Recovery your Bitcoin wallet**: WalletGen allows you to recover your bitcoin wallet by seed phrase (mnemonic phrase).
 
 ## Supported Blockchains
 
@@ -67,27 +69,6 @@ Unlike Python-based brute force tools, **WalletGen** is written in C++ and optim
 <p align="center">
     <img width="1000" height="460" alt="WalletGen search lost bitcoin wallets on Linux Demo" title="WalletGen search lost bitcoin wallets on Linux" src="/assets/walletgen_linux1.webp" />
 </p>
-
-## How to Search for Lost Bitcoin & Ethereum Wallets with Balance
-
-**Wallet Gen** allows you to search using brute-force method for two types of crypto wallets with an existing balance.
-
-### For Bitcoin (BTC) wallets:
-
-* Press key 3 in the menu or run start_search_btc.bat to search Bitcoin wallets through the internet. This method may take longer, as it checks wallet balances in real-time via blockchain explorers.
-* Press key 6 to search Bitcoin wallets using the database. This method is faster because it compares generated wallets against a pre-built database of known addresses with balances.
-
-### For EVM wallets (Ethereum, BNB, MATIC, etc.):
-
-* Press key 5 or run start_search_evm.bat to search EVM wallets through the internet. This method checks for wallets with balance in real-time through blockchain explorers.
-* Press key 6 to search EVM wallets using the database. This method is faster since it compares generated wallets against the known database of addresses with balance.
-
-### Speed Considerations:
-
-* The speed of the search depends heavily on your hardware, especially the graphics card (GPU). To speed up the process and increase your chances of finding a wallet with a balance, you can run multiple instances of the program (1 to 4), depending on your system's performance
-
-By using the database, you can significantly improve the efficiency of your search, as it eliminates the need to query the blockchain for every wallet generated
-
 
 # How to start
 
@@ -115,6 +96,26 @@ cd walletgen
 | EVM Database                                            | &nbsp;&nbsp;&nbsp;&nbsp;[evm_database.txt](https://github.com/tony-dev1/walletgen/releases/download/database/evm_database.txt)  | 1.02 GB | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 999 700
 
 
+## How to Search for Lost Bitcoin & Ethereum Wallets with Balance
+
+**Wallet Gen** allows you to search using brute-force method for two types of crypto wallets with an existing balance.
+
+### For Bitcoin (BTC) wallets:
+
+* Press key 3 in the menu or run start_search_btc.bat to search Bitcoin wallets through the internet. This method may take longer, as it checks wallet balances in real-time via blockchain explorers.
+* Press key 6 to search Bitcoin wallets using the database. This method is faster because it compares generated wallets against a pre-built database of known addresses with balances.
+
+### For EVM wallets (Ethereum, BNB, MATIC, etc.):
+
+* Press key 5 or run start_search_evm.bat to search EVM wallets through the internet. This method checks for wallets with balance in real-time through blockchain explorers.
+* Press key 6 to search EVM wallets using the database. This method is faster since it compares generated wallets against the known database of addresses with balance.
+
+### Speed Considerations:
+
+* The speed of the search depends heavily on your hardware, especially the graphics card (GPU). To speed up the process and increase your chances of finding a wallet with a balance, you can run multiple instances of the program (1 to 4), depending on your system's performance
+
+By using the database, you can significantly improve the efficiency of your search, as it eliminates the need to query the blockchain for every wallet generated
+
 ## The Program Found a Wallet — What’s Next?
 When the program finds a wallet with a balance, it will:
 * **Stop** immediately
@@ -126,6 +127,29 @@ When the program finds a wallet with a balance, it will:
 2. Once restored, you’ll be able to transfer the funds to your own wallet.
    
 >  If the find is successful, be sure to share a small portion of the balance you find with me! Thank you!
+
+## Recovery Your Bitcoin Wallet
+
+WalletGen allows you to recover your bitcoin wallet by seed phrase (mnemonic phrase). The program supports entering a complete seed phrase, as well as searching for missing words using special characters.
+
+### Process Description
+
+#### Search for missing words:
+
+If your seed phrase is missing some words or you are unsure, replace those words with an *. WalletGen will search through all possible variations in the places of * to find the correct seed phrase and restore the associated wallet balance.
+
+#### Entering a complete seed-phrase:
+
+If you have a full 12-word seed, simply enter it in full with a space. WalletGen will generate all address types (Legacy, SegWit, P2SH) and check their balances.
+
+![recovery](/assets/recovery.webp)
+
+### Important recommendations
+
+* Seed-phrase must contain exactly 12 words.
+* Use only the * symbol to search for missing words.
+* Searching for missing words may take considerable time, especially if several words are missing.
+* If the wallet with balance is successfully recovered, the program will automatically stop and save the found data.
 
 ## My Finds
 
