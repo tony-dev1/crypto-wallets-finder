@@ -129,7 +129,7 @@ When the program finds a wallet with a balance, it will:
 
 ## My Finds
 
-![mywallet](https://github.com/user-attachments/assets/e5fbaa63-5a9a-449b-aa76-93c5a1fe7c9b)
+![mywallet](/assets/wallet.png)
 
 
 I’ve personally recovered two BTC wallets with a balance. The first had 0.000032 BTC, the second contained 0.0528 BTC (roughly $4800 at the time of discovery).  
