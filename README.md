@@ -1,6 +1,6 @@
-# WalletGen – Crypto Wallet Generator & Balance Finder for Lost Bitcoin (BTC), Ethereum (ETH), BNB, Polygon (MATIC) and EVM Chains
+# WalletGen – Crypto Wallet Generator & Balance Finder for Lost Bitcoin (BTC), Ethereum (ETH), BNB, Polygon (MATIC) and EVM Chains & Bitcoin Wallet Recover
 
-**WalletGen** is an open-source, ultra-fast **crypto wallet generator** and **seed phrase brute force tool**. It helps you find lost or inactive **Bitcoin (BTC)**, **Ethereum (ETH)**, **BNB**, **Polygon (MATIC)**, and other **EVM-compatible wallets** with real-time balance checking and high-performance C++ engine.
+**WalletGen** is an open-source, ultra-fast **crypto wallet generator** and **seed phrase brute force tool**. It helps you find and recovery lost or inactive **Bitcoin (BTC)**, **Ethereum (ETH)**, **BNB**, **Polygon (MATIC)**, and other **EVM-compatible wallets** with real-time balance checking and high-performance C++ engine.
 
 <!--
 Meta description:
@@ -218,7 +218,7 @@ Yes. WalletGen supports scanning for **Ethereum wallets with balance** using bru
 WalletGen is intended for **educational and research purposes only**. It should only be used on wallets you own or have permission to access.
 
 ## Todo
-1. Search for missing words in a seed phrase.
+1. Search for missing words in a seed phrase. - **Done!**
 
 ## Contribute
 
