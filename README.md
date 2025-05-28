@@ -103,7 +103,7 @@ cd walletgen
 ### For Bitcoin (BTC) wallets:
 
 * Press key 3 in the menu or run start_search_btc.bat to search Bitcoin wallets through the internet. This method may take longer, as it checks wallet balances in real-time via blockchain explorers.
-* Press key 6 to search Bitcoin wallets using the database. This method is faster because it compares generated wallets against a pre-built database of known addresses with balances.
+* Press key 4 to search Bitcoin wallets using the database. This method is faster because it compares generated wallets against a pre-built database of known addresses with balances.
 
 ### For EVM wallets (Ethereum, BNB, MATIC, etc.):
 
