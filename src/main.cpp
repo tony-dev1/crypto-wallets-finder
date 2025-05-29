@@ -138,7 +138,6 @@ void start_search_btc_wallets(int way = 0);
 void start_search_evm_wallets(int way = 0);
 
 
-
 int main(int argc, char** argv) {
      
     walletgen_path = std::string(argv[0]);
@@ -189,8 +188,6 @@ int main(int argc, char** argv) {
     while (true) {
 
         int action = show_menu();
-
-        generate_wallet_test();
 
         std::cout << "\n";
 
